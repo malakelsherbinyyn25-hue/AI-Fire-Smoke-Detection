@@ -35,7 +35,22 @@ The model was trained using the following configuration:
 
 ## 📊 Model Evaluation
 
-The repository includes training results and evaluation visualizations, including:
+The YOLOv8 model was trained for 50 epochs to detect two classes: **Fire** and **Smoke**.
+
+### Evaluation Metrics — Final Epoch
+
+| Metric    |  Score |
+| --------- | -----: |
+| Precision | 78.96% |
+| Recall    | 67.89% |
+| mAP@50    | 73.62% |
+| mAP@50-95 | 44.13% |
+
+*Note: These metrics represent the final training epoch and may differ from the performance of the best model checkpoint (`best.pt`).*
+
+### Training and Evaluation Visualizations
+
+The repository includes:
 
 * Precision-Recall curve
 * Precision curve
@@ -43,9 +58,8 @@ The repository includes training results and evaluation visualizations, includin
 * F1-score curve
 * Confusion matrix
 * Normalized confusion matrix
-* Training results
+* Training results across epochs
 
-These files help analyze the model's performance. Quantitative evaluation scores can be added after reviewing the final evaluation results.
 
 ## 📁 Repository Contents
 
