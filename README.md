@@ -35,18 +35,42 @@ The model was trained using the following configuration:
 
 ## 📊 Model Evaluation
 
-The YOLOv8 model was trained for 50 epochs to detect two classes: **Fire** and **Smoke**.
+The YOLOv8 model was evaluated on the validation dataset containing 872 images and two classes: **Fire** and **Smoke**.
 
-### Evaluation Metrics — Final Epoch
+### Overall Evaluation Metrics
 
 | Metric    |  Score |
 | --------- | -----: |
-| Precision | 78.96% |
-| Recall    | 67.89% |
-| mAP@50    | 73.62% |
-| mAP@50-95 | 44.13% |
+| Precision | 76.95% |
+| Recall    | 68.72% |
+| mAP@50    | 73.82% |
+| mAP@50-95 | 44.49% |
 
-*Note: These metrics represent the final training epoch and may differ from the performance of the best model checkpoint (`best.pt`).*
+### Class-wise Evaluation
+
+| Class | Precision | Recall | mAP@50 | mAP@50-95 |
+| ----- | --------: | -----: | -----: | --------: |
+| Fire  |     78.2% |  76.8% |  80.3% |     46.1% |
+| Smoke |     75.7% |  60.6% |  67.3% |     42.8% |
+
+### Training and Evaluation Visualizations
+
+The repository includes:
+
+* Precision-Recall curve
+* Precision curve
+* Recall curve
+* F1-score curve
+* Confusion matrix
+* Normalized confusion matrix
+* Training results across epochs
+
+### Observations
+
+The model achieved better detection performance for Fire than for Smoke. Smoke detection remains an area for improvement, particularly in Recall.
+
+*Note: These results were obtained by evaluating the saved `best.pt` checkpoint on the validation dataset. Performance on unseen test data may differ.*
+
 
 ### Training and Evaluation Visualizations
 
