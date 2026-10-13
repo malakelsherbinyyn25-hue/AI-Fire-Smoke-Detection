@@ -112,3 +112,7 @@ Model Training and Evaluation using YOLOv8 and Deep Learning.
 ---
 
 **Note:** This project is developed for educational purposes. Its predictions should not be treated as a replacement for certified fire detection and safety systems.
+
+## Project Demo
+
+![Fire Detection](fire-detection-demo.png)
