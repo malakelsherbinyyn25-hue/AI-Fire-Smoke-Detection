@@ -1,3 +1,8 @@
+## Project Demo
+
+![Fire Detection](demo.jpg)
+
+
 # 🔥 AI-Based Fire & Smoke Detection Using Deep Learning
 
 ## 📌 Project Overview
@@ -115,6 +120,4 @@ Model Training and Evaluation using YOLOv8 and Deep Learning.
 
 
 
-## Project Demo
 
-![Fire Detection](demo.jpg)
